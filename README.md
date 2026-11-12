@@ -4,6 +4,8 @@
 
 **下载**：[最新 Release](https://github.com/Alivop/nanossh/releases/latest)（当前为 macOS arm64 的 DMG）· 开源协议 [MIT](LICENSE)
 
+![NanoSSH 界面：三个 SSH 页签，终端里是 nginx 状态、磁盘占用与日志](docs/screenshot.png)
+
 | 层 | 技术 |
 |---|---|
 | 桌面外壳 | Tauri 2（系统 WebView，不捆绑 Chromium，安装包约 5–15 MB） |
@@ -134,6 +136,7 @@ pnpm dist:mac:dmg
 
 ```
 .
+├── docs/screenshot.png              # README 里的界面截图（仅文档用，不参与构建）
 ├── index.html                       # 只有 <div id="app"> 挂载点，界面全在 Svelte 里
 ├── components.json                  # shadcn-svelte 的别名 / Tailwind / 图标配置
 ├── svelte.config.js · tsconfig.json · vite.config.ts
