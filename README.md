@@ -2,7 +2,7 @@
 
 跨平台多页签 SSH 客户端。纯 Rust 实现 SSH 协议栈，不依赖系统 `ssh` 命令，Windows / macOS / Linux 三平台同一套代码。
 
-**下载**：[最新 Release](https://github.com/Alivop/nanossh/releases/latest)（macOS arm64 `.dmg` · Windows x64 `.exe` / `.msi`）· 开源协议 [MIT](LICENSE)
+**下载**：[最新 Release](https://github.com/Alivop/nanossh/releases/latest)（macOS arm64 `.dmg` · Windows x64 `.exe` / `.msi` · Linux x64 `.deb` / `.AppImage`）· 开源协议 [MIT](LICENSE)
 
 ![NanoSSH 界面：三个 SSH 页签，终端里是 nginx 状态、磁盘占用与日志](docs/screenshot.png)
 
