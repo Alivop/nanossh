@@ -124,13 +124,13 @@ pnpm dist:mac:dmg
 
 > 受限环境下 `bundle_dmg.sh` 可能因无法挂载磁盘映像而失败，这不影响 `.app` 产物，也不影响应用运行。
 
-各平台建议在对应系统的 CI 上分别执行 `pnpm tauri:build`（或用 Tauri 官方 GitHub Action）：
+仓库已配置 GitHub Actions（`.github/workflows/build.yml`）：推送到 `main` 即在 macOS / Windows / Linux 三个 runner 上构建，产物在 Actions 页面的 **Artifacts** 里下载（Windows 出 `.exe` + `.msi`，macOS 出 `.app` + `.dmg`，Linux 出 `.AppImage` + `.deb`）：
 
 | 平台 | 产物 |
 |---|---|
 | macOS | `NanoSSH.app`（可选 `.dmg`） |
 | Windows | `.exe`（NSIS）/ `.msi` |
-| Linux | `.AppImage` / `.deb` / `.rpm` |
+| Linux | `.AppImage` / `.deb` |
 
 ## 目录结构
 
